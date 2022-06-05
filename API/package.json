@@ -1,0 +1,48 @@
+{
+    "name": "hlf-api",
+    "version": "1.0.0",
+    "description": "InvoiceMate HLF API Server",
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "scripts": {
+        "dev": "nodemon app"
+    },
+    "engineStrict": true,
+    "author": "Matesol",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.9.2",
+        "fabric-ca-client": "^2.2.3",
+        "fabric-network": "^2.2.3",
+        "jsonwebtoken": "^8.5.1",
+        "nodemon": "^2.0.7"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.9.0",
+        "mocha": "^8.2.0",
+        "nyc": "^14.1.1",
+        "sinon": "^7.1.1",
+        "sinon-chai": "^3.3.0"
+    },
+    "nyc": {
+        "exclude": [
+            "coverage/**",
+            "test/**"
+        ],
+        "reporter": [
+            "text-summary",
+            "html"
+        ],
+        "all": true,
+        "check-coverage": true,
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+    }
+}

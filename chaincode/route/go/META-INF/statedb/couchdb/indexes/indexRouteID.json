@@ -1,0 +1,6 @@
+{
+  "index": { "fields": ["docType", "RouteID"] },
+  "ddoc": "indexRouteDoc",
+  "name": "indexRouteID",
+  "type": "json"
+}
